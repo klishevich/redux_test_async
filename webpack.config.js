@@ -1,5 +1,10 @@
 var path = require('path');
 var config = {
+    devServer: {
+        contentBase: './build',
+        host: 'localhost',
+        port: 3000
+    },
     entry: path.resolve(__dirname, 'index.js'),
     output: {
         path: path.resolve(__dirname, 'build'),

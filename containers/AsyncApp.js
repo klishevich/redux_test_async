@@ -39,9 +39,10 @@ class AsyncApp extends Component {
     const { selectedSubreddit, posts, isFetching, lastUpdated } = this.props
     return (
       <div>
+        <h1>My Test Redux React Async App</h1>
         <Picker value={selectedSubreddit}
                 onChange={this.handleChange}
-                options={[ 'reactjs', 'frontend', 'rubyonrails' ]} />
+                options={[ 'reactjs', 'frontend', 'rubyonrails', 'css', 'nodejs' ]} />
         <p>
           {lastUpdated &&
             <span>

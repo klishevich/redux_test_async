@@ -31683,7 +31683,7 @@
 	        null,
 	        _react2.default.createElement(_Picker2.default, { value: selectedSubreddit,
 	          onChange: this.handleChange,
-	          options: ['reactjs', 'frontend', 'rubyonrails'] }),
+	          options: ['reactjs', 'frontend', 'rubyonrails', 'java'] }),
 	        _react2.default.createElement(
 	          'p',
 	          null,
