@@ -1,11 +1,18 @@
 var path = require('path');
+// var webpack = require('webpack');
 var config = {
     devServer: {
         contentBase: './build',
         host: 'localhost',
         port: 3000
     },
-    entry: path.resolve(__dirname, 'index.js'),
+    entry: {
+        main: [
+        'webpack-dev-server/client?http://localhost:3000',
+        'webpack/hot/only-dev-server',
+        path.resolve(__dirname, 'index.js')
+        ],
+    },
     output: {
         path: path.resolve(__dirname, 'build'),
         filename: 'bundle.js'
